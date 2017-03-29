@@ -175,7 +175,7 @@ var latlng = {};
     console.log("shuffled neighborhood", shuffNeigh)
         
           geocodeAddress(geocoder, map, shuffNeigh);
-          search("chicago " + shuffNeigh);
+          // search("chicago " + shuffNeigh);
       
         function geocodeAddress(geocoder, resultsMap, shuffNeigh) {
 
