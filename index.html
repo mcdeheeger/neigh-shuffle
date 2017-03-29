@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+  <script src="search.js"></script>
+  <title>Chicago Neighborhoods</title>
+
+</head>
+<body>
+
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="jumbotron">
+                <br>
+                <br>
+                <h1 id="title" class="text-center">Chicago Neighborhoods</h1>      
+              </div>
+        </div>
+      </div>
+    
+
+    <div class="row">
+      <div class="col-lg-2 col-xs-12">
+        <div id="shuffle" class=" btn btn-primary">Shuffle
+        </div>
+        <br>
+        <br>
+        <div id="buttons">
+          <label> <input id="query" value='' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+        </div>
+        <div class="dropdown">
+            <button onclick="dropdownList()" class="dropbtn" >Neighborhoods</button>
+            <div id="neighborhoods" class="neigh-list" hidden>
+            </div>
+        </div>
+      </div>
+
+      <div id="map" class="API-div col-lg-4 col-xs-11">
+        <p></p>
+      </div>
+          
+      <div id="search-container" class="API-div col-lg-4 col-xs-11">
+        <p></p>
+      </div>
+    </div>
+
+    </div>
+
+  
+  
+  
+    <script src="assets/javascript/dropdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="assets/javascript/api.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFrCsO1mlS2_ZaJc2XxG4QE2vKFyW4lyg">
+    </script>
+
+</body>
+</html>
