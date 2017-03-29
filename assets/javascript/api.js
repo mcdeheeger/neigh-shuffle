@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 var latlng = {};
 
       navigator.geolocation.getCurrentPosition(function(position) {
@@ -229,5 +231,5 @@ var latlng = {};
       }
   });
  
-
+});
     
